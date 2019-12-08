@@ -4,7 +4,7 @@ import { Flex } from "@theme-ui/components"
 import useSiteMetadata from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-site-metadata"
 
 const Footer = () => {
-  const { siteTitle } = useSiteMetadata()
+  const { author } = useSiteMetadata()
 
   return (
     <Flex
@@ -21,7 +21,7 @@ const Footer = () => {
       }}
     >
       <div>
-        &copy; {new Date().getFullYear()} by {siteTitle}. All rights reserved.
+        &copy; {new Date().getFullYear()} {author}. All rights reserved.
       </div>
       <div>
         {`Built with `}
