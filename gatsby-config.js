@@ -31,6 +31,10 @@ module.exports = {
         url: `https://twitter.com/dani_akash_`,
       },
       {
+        name: `Reddit`,
+        url: `https://www.reddit.com/user/dani_akash_`
+      },
+      {
         name: `Instagram`,
         url: `https://www.instagram.com/dani_akash_`,
       },
