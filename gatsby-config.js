@@ -2,9 +2,19 @@ require(`dotenv`).config({
   path: `.env`,
 })
 
+const CONST_description = `Problems, solutions, hacks and interesting tools I come across everyday in my software engineering career.`;
+const CONST_headline = `node_modules ﹣ A tech blog by Dani Akash`;
+
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: `node_modules`,
+    siteTitleAlt: CONST_headline,
+    siteHeadline: CONST_headline,
+    siteUrl: `https://nodemodules.xyz`,
+    siteDescription: CONST_description,
+    siteLanguage: `en`,
+    siteImage: `/logo.png`,
+    author: `DaniAkash`,
     navigation: [
       {
         title: `Blog`,
@@ -15,6 +25,17 @@ module.exports = {
         slug: `/about`,
       },
     ],
+    externalLinks: [
+      {
+        name: `Twitter`,
+        url: `https://twitter.com/dani_akash_`,
+      },
+      {
+        name: `Instagram`,
+        url: `https://www.instagram.com/dani_akash_`,
+      },
+    ],
+    showLineNumbers: true,
   },
   plugins: [
     {
@@ -31,21 +52,21 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: CONST_headline,
+        short_name: `node_modules`,
+        description: CONST_description,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
         display: `standalone`,
         icons: [
           {
-            src: `/android-chrome-192x192.png`,
+            src: `/logo.png`,
             sizes: `192x192`,
             type: `image/png`,
           },
           {
-            src: `/android-chrome-512x512.png`,
+            src: `/logo.png`,
             sizes: `512x512`,
             type: `image/png`,
           },
